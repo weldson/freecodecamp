@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <body>
+    <main>
+      <section>
+        <h1 id="title">Programming Language Survey</h1>
+        <p id="description">
+          Thank you for participating in this survey! You have been identified to us as a professional in software
+          engineering. We thus greatly value your opinion. By participating you are contributing to our goal of better
+          understanding and improving software engineering practices.
+        </p>
+      </section>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input name="name" id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">E-mail</label>
+          <input name="email" id="email" type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Age</label>
+          <input name="number" id="number" type="number" min="18" max="120" placeholder="Enter your age">
+        </div>
+
+        <div class="form-group form-radio">
+          <p>
+            Select your gender
+          </p>
+          <!-- <label for="gender">
+            Select your gender
+          </label> -->
+          <label>
+            <input type="radio" name="gender" id="gender" value="man">Man
+          </label>
+          <label>
+            <input type="radio" name="gender" id="gender" value="woman">Woman
+          </label>
+          <label>
+            <input type="radio" name="gender" id="gender" value="other">Other
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>
+            Which option best describes your current role?
+          </label>
+          <select id="dropdown">
+            <option disabled selected value>Select current role</option>
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Prefer not say</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Which the following programming languages are familiar with? <small>(Check all that apply)</small>
+          </p>
+          <label>
+            <input type="checkbox" value="cpp">
+            C++
+          </label>
+          <label>
+            <input type="checkbox" value="java">
+            Java
+          </label>
+          <label>
+            <input type="checkbox" value="javascript">
+            Javascript
+          </label>
+          <label>
+            <input type="checkbox" value="php">
+            PHP
+          </label>
+          <label>
+            <input type="checkbox" value="python">
+            Python
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Which the following frameworks are familiar with? <small>(Check all that apply)</small>
+          </p>
+          <label>
+            <input type="checkbox" value="adonis">
+            Adonis
+          </label>
+          <label>
+            <input type="checkbox" value="django">
+            Django
+          </label>
+          <label>
+            <input type="checkbox" value="electron">
+            Electron
+          </label>
+          <label>
+            <input type="checkbox" value="laravel">
+            Laravel
+          </label>
+          <label>
+            <input type="checkbox" value="reactjs">
+            ReactJS
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>
+            Do you have any suggestions?
+          </label>
+          <textarea placeholder="Enter your comment here..."></textarea>
+        </div>
+        <button class="btn" type="submit" id="submit">
+          Submit
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

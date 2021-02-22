@@ -1,0 +1,114 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: white;
+}
+
+main,
+section,
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  align-items: center;
+}
+
+small {
+  color: lightslategrey;
+}
+
+section {
+  max-width: 680px;
+  justify-content: center;
+}
+
+#title {
+  align-self: center;
+  font-size: 40px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+#description {
+  align-self: center;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: justify;
+  margin-top: 0;
+}
+
+form {
+  padding: 10px 10px;
+  max-width: 660px;
+  background-color: #263238;
+  width: fit-content;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 100px;
+}
+
+.form-group {
+  padding: 10px 10px;
+}
+
+.form-group>label {
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: auto;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+input, select {
+  height: 30px;
+  width: auto;
+}
+
+label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  width: 20px;
+  margin-right: 10px;
+}
+
+textarea {
+  height: 150px;
+  padding-left: 10px;
+}
+
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  height: 30px;
+  padding: 5px 50px;
+  background-color: #43A047;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #388E3C;
+  cursor: pointer;
+}
